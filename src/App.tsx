@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.sass';
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Route, Routes } from 'react-router-dom';
 
+import { Layout } from './Pages/Layout/Layout';
+import { HeaderPage } from './Pages/HeaderPage/HeaderPage';
+import { Favorites } from './Pages/Favorites/Favorites';
+import { ProductItem } from './Pages/ProductItem/ProductItem';
+import { Authorization } from './Pages/Authorization/Authorization';
+import { CreateOrder } from './Pages/CreateOrder/CreateOrder';
+import { UserInfo } from './Pages/UserInfo/UserInfo';
+import { Error } from './Pages/Error/Error';
+
+import { AppRoutes } from './types/types';
+
+
+export const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+    <Routes>
+      <Route path={AppRoutes.HOME} element={<Layout />}>
+        <Route index element={<HeaderPage />} />
+        <Route path={AppRoutes.FAVORITES} element={<Favorites />} />
+        <Route path={AppRoutes.PRODUCT} element={<ProductItem />} />
+        <Route path={AppRoutes.LOGIN} element={<Authorization />} />
+        <Route path={AppRoutes.CREATE_ORDER} element={<CreateOrder />} />
+        <Route path={AppRoutes.ACCOUNT} element={<UserInfo />} />
+        <Route path={AppRoutes.NOT_FOUND} element={<Error />} />
+      </Route>
+    </Routes>
+  );
+};
