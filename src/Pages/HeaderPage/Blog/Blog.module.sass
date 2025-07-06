@@ -1,0 +1,12 @@
+.blog
+    padding-top: 30px
+
+.blogContainer
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr))
+    gap: 10px
+    row-gap: 10px
+
+@media (max-width: 600px) 
+    .blogContainer
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))

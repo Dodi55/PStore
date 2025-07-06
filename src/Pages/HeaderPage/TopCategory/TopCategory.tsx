@@ -8,8 +8,8 @@ const categories = [
   { id: 3, title: 'Планшеты', image: 'https://maxmobiles.ru/images/ab__webp/ab__fn_menu_icon/121/Airpod-apple2_jpg.webp', link: '/catalog/tablets' },
   { id: 4, title: 'ПК', image: 'https://maxmobiles.ru/images/ab__webp/ab__fn_menu_icon/121/watch-apple3_jpg.webp', link: '/catalog/pc' },
   { id: 5, title: 'Мониторы', image: 'https://maxmobiles.ru/images/ab__webp/ab__fn_menu_icon/121/acs-apple2_jpeg.webp', link: '/catalog/monitors' },
-  { id: 5, title: 'Мониторы', image: 'https://maxmobiles.ru/images/ab__webp/ab__fn_menu_icon/121/store-card-13-homepod-nav-2_jpg.webp', link: '/catalog/monitors' },
-  { id: 5, title: 'Мониторы', image: 'https://maxmobiles.ru/images/ab__webp/ab__fn_menu_icon/121/for-game_jpg.webp', link: '/catalog/monitors' },
+  { id: 6, title: 'Мониторы', image: 'https://maxmobiles.ru/images/ab__webp/ab__fn_menu_icon/121/store-card-13-homepod-nav-2_jpg.webp', link: '/catalog/monitors' },
+  { id: 7, title: 'Мониторы', image: 'https://maxmobiles.ru/images/ab__webp/ab__fn_menu_icon/121/for-game_jpg.webp', link: '/catalog/monitors' },
 ];
 
 export const TopCategory = () => {
