@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './Burger.module.sass';
 
 import { HiMiniSquares2X2 } from "react-icons/hi2";
@@ -16,6 +16,10 @@ export const Burger = () => {
     const ref1 = useRef<HTMLDivElement>(null);
 
 
+    useEffect(() => {
+        if (isOpen === true)  document.documentElement.style.overflow = 'hidden'
+        else document.documentElement.style.overflow = 'auto'
+    }, [isOpen])
 
 
     return (

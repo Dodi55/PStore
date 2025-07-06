@@ -7,3 +7,32 @@
 @media (max-width: 800px)
     .container
         padding: 0 10px
+
+.swiper-button-next,
+.swiper-button-prev
+    width: 45px!important
+    height: 45px!important
+    padding: 10px!important
+    border-radius: 50%!important
+    background-color: #fff
+    box-shadow: 0 0 10px -1px #a8a8a8
+    transition: 0.2s background-color
+    &:hover
+        background-color: #eaeaea
+
+.swiper-button-next::after,
+.swiper-button-prev::after
+    z-index: 9999
+    font-size: 0!important
+    content: ''!important
+    background-image: url('../src/assets/TopSales/icons8-стрелка-50.png') !important
+    background-size: contain!important
+    background-repeat: no-repeat!important
+    display: block!important
+    margin: auto!important
+    width: 25px!important
+    height: 25px!important
+
+
+.swiper-button-prev::after
+    transform: rotate(-180deg)

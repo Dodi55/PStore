@@ -1,0 +1,39 @@
+.topCategory
+    padding-top: 30px
+    
+.grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr))
+  justify-content: center
+  row-gap: 20px
+
+.item
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 0px 20px
+  &:hover
+    .image
+        scale: 1.06
+    .text
+        color: #898989
+
+.image
+    transition: 0.2s 
+    width: 130px
+
+.text
+    margin-top: 14px
+    font-size: 16px
+    font-weight: 500
+    transition: 0.2s 
+
+@media (max-width: 400px) 
+    .item
+        padding: 0 10px
+    .image
+        width: 120px
+    .grid
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr))
