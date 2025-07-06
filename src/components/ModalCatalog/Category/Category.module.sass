@@ -1,0 +1,21 @@
+.categoryItem
+    display: flex
+    align-items: center
+    gap: 8px
+    height: 57px
+    white-space: nowrap
+    padding: 10px 20px
+    transition: 0.2s background-color
+    cursor: pointer
+    font-size: 14px
+    p
+        font-weight: 500
+    &:hover
+        background-color: #ededed
+    &:first-child
+        border-top-left-radius: 8px
+    &:last-child
+        border-bottom-left-radius: 8px
+
+.activeButton
+    background-color: #ededed

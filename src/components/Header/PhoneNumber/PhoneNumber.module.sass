@@ -1,0 +1,32 @@
+.phoneBlock
+    position: relative
+    display: flex
+    align-items: center
+    transition: background-color 0.3s
+    padding: 0 20px
+    border-radius: 8px
+    margin-right: 10px
+    &:hover
+        background-color: #ededed 
+
+.active
+    background-color: #ededed
+
+.phone
+    display: flex
+    align-items: center
+    user-select: none
+    white-space: nowrap
+
+.image
+    font-size: 30px
+    color: #8f8f8f
+    margin-right: 6px
+
+@media (max-width: 1160px)
+    .number
+        display: none
+
+@media (max-width: 840px)
+    .phoneBlock
+        display: none

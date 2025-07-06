@@ -1,0 +1,46 @@
+.input
+    position: relative
+    align-self: stretch
+    display: flex
+    width: 100%
+    margin: 0 10px
+
+.inputBlock
+    position: relative
+    display: flex
+    align-self: stretch
+    width: 100%
+
+.inputFild
+    font-size: 16px
+    border-radius: 8px
+    width: 100%
+    outline: none
+    border: none
+    background-color: #ededed
+    padding: 0 14px
+    padding-right: 30px
+    transition: box-shadow 0.2s ease
+    &:focus
+        box-shadow: 0 0 10px 0 #aaaaaa
+
+.Magnifier
+    position: absolute
+    top: 50%
+    transform: translateY(-50%) translateX(-50%)
+    right: 0px
+
+@media (max-width: 480px)
+    .Magnifier
+        left: 50%
+    .inputFild
+        width: 44px
+        height: 42px
+    .input
+        position: relative
+        justify-content: flex-end
+        display: flex
+        margin: 0 4px 
+    .inputBlock
+        width: auto
+        

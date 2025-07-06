@@ -1,0 +1,44 @@
+.button
+    background-color: #000
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    padding: 8px 12px
+    border-radius: 6px
+    font-size: 14px
+    font-weight: 400
+    transition: background-color 0.2s ease
+    cursor: pointer
+    user-select: none
+    &:hover
+        background-color: #ffcc00
+
+.buttonIcon
+    color: #fff
+    font-size: 26px
+    margin-right: 8px
+
+.catalogText
+    display: flex
+    align-items: center
+
+.catalogTexIcon
+    color: #ffffffbc
+    font-size: 16px
+    margin-left: 6px
+
+@media (max-width: 1000px)
+    .catalogTextP
+        display: none
+    .catalogTexIcon
+        display: none
+    .buttonIcon
+        margin-right: 0
+    .button
+        order: -1
+        margin-right: 10px
+        
+@media (max-width: 480px)
+    .button
+        margin-right: 4px
