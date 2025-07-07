@@ -3,6 +3,7 @@ import { TopSales } from './TopSales/TopSales';
 import { Slider } from './Slider/Slider';
 import { TopCategory } from './TopCategory/TopCategory';
 import { Blog } from './Blog/Blog';
+import { Text } from '../../components/AboutAs/Text/Text';
 
 export const HeaderPage = () => {
     return (
@@ -11,6 +12,7 @@ export const HeaderPage = () => {
             <TopSales />
             <TopCategory />
             <Blog />
+            <Text />
         </>
     );
 };
