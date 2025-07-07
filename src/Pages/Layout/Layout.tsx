@@ -9,7 +9,7 @@ export const Layout = () => {
             <Header />
             <ModalCatalog />
             <Outlet />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     );
 };
